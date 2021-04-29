@@ -95,6 +95,8 @@
     justify-content: flex-start;
     align-items: center;
     
+    
+    
 }
 
 .hero__content{
@@ -128,27 +130,31 @@
 .header-area{
     display: flex;
     font-size: 50px;
-
 }
 
+/* targets the typing text */
 .typing{
     color: var(--purple);
-    z-index: 0;
     margin-left: 10px;
     /* position: relative; */
+   
+    
 
 }
 
+/* create typing pipe */
 .typing::after{
     content: "";
-    /* position: absolute; */
-    width: 1px;
-    right: -5px;
-    height: 100%;
+    /* position: absolute;   */
+    width: 1px; 
+    right: -4px; 
+    height: 50%;
     border-right: 2px solid var(--purple);
     animation: blink 0.5s infinite ease;
-  
+    /* z-index: -1; */
 }
+
+
 
 @keyframes blink{
     0%{
@@ -632,6 +638,10 @@ input[type=submit]{
         right: 5%;
         /* transform: translate(5%, 20%); */
     }
+
+    .typing::after{
+        animation: none;
+    }
     
     #mobile-menu.is-active .bar:nth-child(2){
         opacity: 0;
@@ -808,6 +818,10 @@ input[type=submit]{
         top: 2%;
         right: 5%;
         /* transform: translate(5%, 20%); */
+    }
+
+    .typing::after{
+        animation: none;
     }
 
 }

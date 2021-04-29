@@ -1,6 +1,6 @@
 //Display typing text
 
-const texts = ["Programmer", "Cat Lover", "Travelor"];
+const texts = ["Programmer", "Cat Lover", "Traveler"];
 let count = 0;
 let index = 0;
 let currentText = '';
@@ -21,3 +21,4 @@ let letter = '';
     }
     setTimeout(type, 400);
 })();
+
